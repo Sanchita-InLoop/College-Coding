@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <limits.h>
+
 void genAndStoreRandValues(const char* fname, int n) {
     FILE *file = fopen(fname, "w");
     if (file == NULL) {
@@ -59,6 +60,7 @@ void printMaxMin(char* fname){
         printf("The file was empty or contained no valid numbers.\n");
     }
 }
+
 int main() {
     int n;
     printf("Enter n: ");

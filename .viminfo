@@ -11,14 +11,16 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/;
+~MSle0~/;
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1768385995,,"wq"
+|2,0,1768992716,,"wq"
+:sp ../
+|2,0,1768381880,,"sp ../"
 :WQ
 |2,0,1768380536,,"WQ"
 :3wq
@@ -37,14 +39,14 @@ $
 |2,0,1756184297,,"set nu"
 
 # Search String History (newest to oldest):
+? @$
+|2,1,1768381880,,"@$"
 ? ;
 |2,1,1758005634,,";"
 ?/freeLi
 |2,1,1757401253,47,"freeLi"
 ?/freeL
 |2,1,1757401247,47,"freeL"
-? @$
-|2,1,1757398624,,"@$"
 ? \<createIntQueue\>
 |2,1,1756188867,,"\\<createIntQueue\\>"
 ? \<name\>
@@ -59,6 +61,9 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
+"0	CHAR	0
+		
+|3,0,0,0,1,0,1768381880,"	"
 "1	LINE	0
 	        s->arr=(int*)malloc(Stacksize*sizeof(int));
 |3,0,1,1,1,0,1756795521,"        s->arr=(int*)malloc(Stacksize*sizeof(int));"
@@ -231,234 +236,404 @@ $
 |<"        if(sr->studentArray[i].roll== s.roll){","            return 0;","            }","        }","    sr->studentArray[sr->count++]=s;","            return 1; ","}","","struct Student get(struct SReg *sr, int r){","    struct Student NotFound={\"Error\",00,\" X\",\"X\"};","    for(int i=0;i<sr->count;i++){","    if(sr->studentArray[i].roll==r){","        return sr->studentArray[i];","    }","    return NotFound;","    }","}","","int delete(struct SReg *sr, int r){",>35
 |<"    for(int i=0;i<sr->count;i++){","    if(sr->studentArray[i].roll==r){","        for(int j=i;j<=sr->count;j++){","            sr->studentArray[j]=sr->studentArray[j+1];","        }","        sr->count--;","        return 1;","        }","    }"
 ""-	CHAR	0
-	C
-|3,1,36,0,1,0,1768384643,"C"
+	;
+|3,1,36,0,1,0,1768989629,";"
 
 # File marks:
-'0  20  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,48,20,0,1768385995,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
-'1  24  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,49,24,0,1768385823,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
-'2  24  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,50,24,0,1768385823,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
-'3  23  5  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,51,23,5,1768385521,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
-'4  22  5  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,52,22,5,1768385521,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
-'5  23  5  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,53,23,5,1768385521,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
-'6  22  5  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,54,22,5,1768385521,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
-'7  9  22  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,55,9,22,1768385476,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
-'8  9  22  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,56,9,22,1768385476,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
-'9  9  22  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,57,9,22,1768385476,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
+'0  40  1  ~/Sem4/Programming_Paradigms_Lab/2assign/p2.cpp
+|4,48,40,1,1768992716,"~/Sem4/Programming_Paradigms_Lab/2assign/p2.cpp"
+'1  19  1  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,49,19,1,1768989806,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+'2  18  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,50,18,16,1768989348,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+'3  18  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,51,18,16,1768989348,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+'4  18  12  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,52,18,12,1768988879,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+'5  18  12  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,53,18,12,1768988879,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+'6  17  18  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,54,17,18,1768988651,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+'7  17  18  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,55,17,18,1768988651,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+'8  17  18  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,56,17,18,1768988651,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+'9  17  18  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,57,17,18,1768988651,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
 
 # Jumplist (newest first):
--'  20  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,20,0,1768385995,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  1  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,1,0,1768385930,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  24  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,24,0,1768385823,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  24  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,24,0,1768385823,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  23  5  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,23,5,1768385605,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  23  5  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,23,5,1768385605,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  22  5  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,22,5,1768385521,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  22  5  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,22,5,1768385521,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  9  22  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,9,22,1768385504,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  9  22  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,9,22,1768385504,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  9  22  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,9,22,1768385504,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  9  22  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,9,22,1768385476,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  19  4  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,19,4,1768385442,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  20  4  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,20,4,1768385442,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  19  4  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,19,4,1768385442,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  19  4  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,19,4,1768385442,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  19  4  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,19,4,1768385418,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  14  29  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,14,29,1768385311,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  13  29  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,13,29,1768385311,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  14  29  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,14,29,1768385311,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  13  29  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,13,29,1768385311,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  13  29  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,13,29,1768385311,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  13  29  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,13,29,1768385311,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  13  29  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,13,29,1768385306,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  13  29  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,13,29,1768385269,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  23  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,23,0,1768385180,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  23  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,23,0,1768385180,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  23  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,23,0,1768385180,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  23  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,23,0,1768385180,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  23  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,23,0,1768385180,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  23  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,23,0,1768385166,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  23  5  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,23,5,1768385024,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  23  3  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,23,3,1768384978,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  21  14  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,21,14,1768384938,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  21  14  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,21,14,1768384938,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  20  14  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,20,14,1768384938,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  20  14  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,20,14,1768384938,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  20  14  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,20,14,1768384938,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  20  14  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,20,14,1768384938,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  20  14  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,20,14,1768384938,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  20  14  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,20,14,1768384938,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  20  14  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,20,14,1768384938,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  20  14  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,20,14,1768384938,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  20  14  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,20,14,1768384922,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  4  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,4,11,1768384635,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  4  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,4,11,1768384635,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  4  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,4,11,1768384635,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  4  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,4,11,1768384635,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  4  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,4,11,1768384635,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  4  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,4,11,1768384635,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  4  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,4,11,1768384635,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  4  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,4,11,1768384635,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  4  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,4,11,1768384635,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  4  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,4,11,1768384635,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  4  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,4,11,1768384635,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  3  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,3,11,1768384508,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  3  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,3,11,1768384508,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  3  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,3,11,1768384508,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  3  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,3,11,1768384508,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  3  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,3,11,1768384508,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  3  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,3,11,1768384508,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  3  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,3,11,1768384508,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  3  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,3,11,1768384508,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  3  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,3,11,1768384508,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  3  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,3,11,1768384508,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  3  11  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,3,11,1768384508,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  22  23  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,22,23,1768384492,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  22  23  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,22,23,1768384492,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  22  23  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,22,23,1768384492,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  22  23  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,22,23,1768384492,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  22  23  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,22,23,1768384492,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  22  23  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,22,23,1768384492,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  22  23  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,22,23,1768384492,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  23  23  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,23,23,1768384492,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  22  23  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,22,23,1768384492,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  22  23  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,22,23,1768384387,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  1  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,1,0,1768384325,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  1  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,1,0,1768384325,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  1  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,1,0,1768384325,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  1  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,1,0,1768384325,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  1  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,1,0,1768384325,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  1  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,1,0,1768384325,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  1  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,1,0,1768384325,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  1  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,1,0,1768384325,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  1  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,1,0,1768384325,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  1  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,1,0,1768384325,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  1  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,1,0,1768384325,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  1  0  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,1,0,1768384325,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  131  3  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,131,3,1768384312,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  142  3  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,142,3,1768384312,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  130  3  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,130,3,1768384312,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  141  3  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,141,3,1768384312,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  129  3  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,129,3,1768384312,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  140  3  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,140,3,1768384312,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  131  3  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,131,3,1768384312,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  142  3  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,142,3,1768384312,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  130  3  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,130,3,1768384312,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  141  3  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,141,3,1768384312,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  130  3  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,130,3,1768384312,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
--'  141  3  ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
-|4,39,141,3,1768384312,"~/Programming_Paradigms_Lab/1assign/3ques/Makefile"
+-'  40  1  ~/Sem4/Programming_Paradigms_Lab/2assign/p2.cpp
+|4,39,40,1,1768992716,"~/Sem4/Programming_Paradigms_Lab/2assign/p2.cpp"
+-'  1  0  ~/Sem4/Programming_Paradigms_Lab/2assign/p2.cpp
+|4,39,1,0,1768989812,"~/Sem4/Programming_Paradigms_Lab/2assign/p2.cpp"
+-'  19  1  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,19,1,1768989806,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  19  1  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,19,1,1768989806,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  28  4  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,28,4,1768989628,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  28  4  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,28,4,1768989628,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  18  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,18,16,1768989617,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  18  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,18,16,1768989617,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  18  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,18,16,1768989348,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  18  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,18,16,1768989348,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  18  12  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,18,12,1768988879,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  18  12  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,18,12,1768988879,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  17  18  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,17,18,1768988651,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  17  18  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,17,18,1768988651,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  17  18  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,17,18,1768988651,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  17  18  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,17,18,1768988651,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  17  18  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,17,18,1768988651,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  17  18  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,17,18,1768988651,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  14  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,14,16,1768988643,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  13  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,13,16,1768988643,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  14  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,14,16,1768988643,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  13  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,13,16,1768988643,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  14  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,14,16,1768988643,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  13  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,13,16,1768988643,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  14  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,14,16,1768988643,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  13  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,13,16,1768988643,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  14  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,14,16,1768988643,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  13  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,13,16,1768988643,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  14  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,14,16,1768988643,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  13  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,13,16,1768988643,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  13  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,13,16,1768988636,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  13  16  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,13,16,1768988636,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  13  14  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,13,14,1768988562,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  13  14  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,13,14,1768988562,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  17  22  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,17,22,1768988548,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  17  22  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,17,22,1768988548,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  17  22  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,17,22,1768988548,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  17  22  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,17,22,1768988548,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  17  22  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,17,22,1768988521,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  17  22  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,17,22,1768988521,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  41  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,41,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  40  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,40,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  41  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,41,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  40  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,40,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  41  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,41,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  40  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,40,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  40  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,40,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  40  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,40,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  40  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,40,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  41  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,41,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  40  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,40,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  41  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,41,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  40  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,40,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  41  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,41,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  40  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,40,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  40  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,40,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  40  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,40,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  40  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,40,42,1768988366,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  40  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,40,42,1768988325,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  40  42  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,40,42,1768988325,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  39  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,39,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  39  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,39,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  39  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,39,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  39  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,39,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  39  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,39,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  39  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,39,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988258,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988129,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  7  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,7,1768988129,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  9  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,9,1768987887,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  38  9  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,38,9,1768987887,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  27  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,27,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  26  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,26,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  27  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,27,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  26  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,26,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  27  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,27,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  26  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,26,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  26  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,26,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  26  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,26,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  26  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,26,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  26  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,26,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  26  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,26,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  26  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,26,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  27  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,27,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  26  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,26,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  27  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,27,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
+-'  26  23  ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+|4,39,26,23,1768987854,"~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp"
 
 # History of marks within files (newest to oldest):
+
+> ~/Sem4/Programming_Paradigms_Lab/2assign/p2.cpp
+	*	1768992714	0
+	"	40	1
+	^	40	2
+	.	40	1
+	+	47	0
+	+	46	9
+	+	43	0
+	+	12	7
+	+	5	9
+	+	12	9
+	+	12	41
+	+	13	32
+	+	18	0
+	+	13	33
+	+	7	8
+	+	13	34
+	+	6	5
+	+	8	11
+	+	12	36
+	+	13	10
+	+	13	35
+	+	13	12
+	+	16	21
+	+	42	0
+	+	13	1
+	+	17	9
+	+	14	0
+	+	13	2
+	+	41	0
+	+	23	0
+	+	34	0
+	+	29	10
+	+	33	10
+	+	37	0
+	+	36	29
+	+	40	1
+
+> ~/Sem4/Programming_Paradigms_Lab/2assign/p1.cpp
+	*	1768989804	0
+	"	19	1
+	^	19	2
+	.	28	1
+	+	49	0
+	+	48	9
+	+	35	0
+	+	3	20
+	+	35	0
+	+	4	0
+	+	4	15
+	+	7	13
+	+	9	12
+	+	30	2
+	+	5	9
+	+	7	12
+	+	6	12
+	+	10	1
+	+	9	1
+	+	8	1
+	+	7	1
+	+	11	2
+	+	30	1
+	+	29	2
+	+	12	5
+	+	29	0
+	+	22	0
+	+	30	1
+	+	32	25
+	+	5	18
+	+	33	0
+	+	35	11
+	+	37	8
+	+	35	5
+	+	40	0
+	+	12	28
+	+	13	25
+	+	17	25
+	+	19	19
+	+	22	0
+	+	25	1
+	+	20	16
+	+	21	13
+	+	26	0
+	+	25	26
+	+	26	31
+	+	28	32
+	+	39	6
+	+	47	0
+	+	30	0
+	+	32	16
+	+	25	17
+	+	26	10
+	+	27	10
+	+	28	17
+	+	27	23
+	+	42	20
+	+	45	22
+	+	39	10
+	+	24	30
+	+	6	14
+	+	12	28
+	+	24	29
+	+	39	7
+	+	36	35
+	+	41	42
+	+	13	24
+	+	14	23
+	+	18	13
+	+	14	14
+	+	18	16
+	+	14	16
+	+	18	19
+	+	2	15
+	+	18	17
+	+	19	0
+	+	28	1
+
+> ~/Sem4/Algorithm_lab/1_assign/3_Ques.c
+	*	1768905359	0
+	"	1	0
+
+> ~/Sem4/Algorithm_lab/1_assign/2_Ques.c
+	*	1768904774	0
+	"	65	15
+	^	26	8
+	.	26	7
+	+	26	7
+
+> ~/Sem4/Algorithm_lab/1_assign/1_Ques.c
+	*	1768903644	0
+	"	72	0
+	^	72	0
+	.	63	0
+	+	5	0
+	+	63	0
+
+> ~/Sem4/Algorithm_lab/2_assign/4_ques.c
+	*	1768902626	0
+	"	1	0
+	^	99	0
+	.	99	0
+	+	99	0
+
+> ~/Sem4/Algorithm_lab/2_assign/3_ques.c
+	*	1768901908	0
+	"	17	12
+	^	17	13
+	.	14	16
+	+	48	0
+	+	14	16
+
+> ~/Sem4/Algorithm_lab/2_assign/2_ques.c
+	*	1768901460	0
+	"	131	0
+	^	105	0
+	.	1	1
+	+	131	0
+	+	1	1
+
+> ~/Sem4/Algorithm_lab/2_assign/5_ques.c
+	*	1768898224	0
+	"	13	0
+	^	13	0
+	.	101	0
+	+	101	0
+
+> /usr/share/vim/vim80/doc/pi_netrw.txt
+	*	1768387812	0
+	"	1120	47
 
 > ~/Programming_Paradigms_Lab/1assign/3ques/Makefile
 	*	1768385992	0
@@ -544,18 +719,8 @@ $
 	+	7	26
 
 > ~/Programming_Paradigms_Lab/1assign/Str.cpp
-	*	1768382330	0
-	"	4	0
-	^	4	0
-	.	3	20
-	+	1	24
-	+	25	0
-	+	59	0
-	+	47	0
-	+	1	15
-	+	3	19
-	+	2	17
-	+	3	20
+	*	1768381869	0
+	"	1	0
 
 > ~/Programming_Paradigms_Lab/1assign/mod1.h
 	*	1768381587	0
