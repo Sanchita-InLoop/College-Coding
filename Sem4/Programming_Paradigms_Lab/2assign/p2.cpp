@@ -112,22 +112,40 @@ int main() {
     GrowingStack<int> stack2;
     GrowingStack<int> stack3;
 
-    initialize(stack1, 2, 10);
-    initialize(stack2, 2, 10);
-    initialize(stack3, 5, 20);
+    int s1_init, s1_max, s1_count;
+    int s2_init, s2_max, s2_count;
 
-    cout << "\nPopulating Stack 1" << endl;
-    push(stack1, 10);
-    push(stack1, 20);
-    push(stack1, 30); 
-    push(stack1, 40);
-    push(stack1, 50);
+    cout << "Setup Stack 1" << endl;
+    cout << "Enter initial size and max limit: ";
+    cin >> s1_init >> s1_max;
+    initialize(stack1, s1_init, s1_max);
+
+    cout << "How many numbers to push to Stack 1? ";
+    cin >> s1_count;
+    cout << "Enter " << s1_count << " numbers: ";
+    for (int i = 0; i < s1_count; i++) {
+        int val;
+        cin >> val;
+        push(stack1, val);
+    }
     cout << "Stack 1: "; printStack(stack1);
 
-    cout << "\nPopulating Stack 2" << endl;
-    int batch[] = {100, 200, 300};
-    push(stack2, batch, 3); 
+    cout << "\nSetup Stack 2" << endl;
+    cout << "Enter initial size and max limit: ";
+    cin >> s2_init >> s2_max;
+    initialize(stack2, s2_init, s2_max);
+
+    cout << "How many numbers to push to Stack 2? ";
+    cin >> s2_count;
+    cout << "Enter " << s2_count << " numbers: ";
+    for (int i = 0; i < s2_count; i++) {
+        int val;
+        cin >> val;
+        push(stack2, val);
+    }
     cout << "Stack 2: "; printStack(stack2);
+
+    initialize(stack3, 5, s1_max + s2_max);
 
     cout << "\nMerging into Stack 3" << endl;
     
@@ -157,7 +175,7 @@ int main() {
         push(stack3, val);
     }
 
-    cout << "\n--- Final State ---" << endl;
+    cout << "\nFinal Stack" << endl;
     cout << "Stack 3: "; printStack(stack3);
 
     destroy(stack1);
