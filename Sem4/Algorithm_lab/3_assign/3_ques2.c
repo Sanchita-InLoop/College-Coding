@@ -58,15 +58,16 @@ void randomized_quicksort(int arr[], int low, int high) {
     current_depth--;
 }
 
-void generate_with_duplicates(int arr[], int n, int percent_duplicates) {
-    int unique_count = n * (100 - percent_duplicates) / 100;
-    if (unique_count < 1) unique_count = 1;
+void generate_with_duplicates(int arr[], int n, int percent) {
+    int limit;
+    if (percent >= 90) limit = 10;       // Only 10 unique numbers!
+    else if (percent >= 50) limit = 100; // 100 unique numbers
+    else limit = n / 2;                  // Normal random spread
     
     for(int i=0; i<n; i++) {
-        arr[i] = rand() % unique_count; 
+        arr[i] = rand() % limit;
     }
 }
-
 void copy_array(int src[], int dest[], int n) {
     for(int i=0; i<n; i++) dest[i] = src[i];
 }
@@ -132,4 +133,5 @@ int main() {
 
     free(arr); free(temp);
     return 0;
+
 }
